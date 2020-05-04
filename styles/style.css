@@ -1,0 +1,275 @@
+h1 {
+  font-family: "Audiowide", cursive;
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0px;
+  color: red;
+}
+
+#main {
+  font-family: Impact, Charcoal, sans-serif;
+}
+#title {
+  background-color: green;
+  text-align: center;
+  margin: -10px -10px 10px;
+  padding: 10px 0 15px;
+}
+#title p {
+  margin: auto auto;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  h1 {
+    line-height: 1;
+  }
+}
+
+
+
+#img-div {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-card {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#image {
+  width: 100%;
+  position: absolute;
+}
+
+
+#img-caption {
+  position: absolute;
+  bottom: 1px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255, 0.55);
+  width: 315px;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  #img-caption {
+    line-height: 1;
+    font-size: 3vw;
+    width: 70%;
+  }
+
+  h1 {
+    line-height: 1;
+    font-size: 12vw;
+  }
+  #title p {
+    font-size: 3vw;
+  }
+}
+
+#tribute-info {
+
+  background-color: green;
+  padding: 13px 0 13px;
+  margin: 10px -10px auto;
+  display: grid;
+    grid-template-columns: 175px auto;
+    grid-template-areas: "sidebar info";
+}
+
+
+<<<<<<< HEAD
+=======
+
+@media (max-width: 700px) {
+  #tribute-info {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto 188px;
+    grid-template-areas:
+      "info"
+      "sidebar";
+  }
+}
+>>>>>>> e9fbfc70d043b79b4b8bc6bab0e24ca5a5ea495c
+
+.origin-text {
+  width: 88%;
+  margin: 10px auto;
+  line-height: 1.25;
+  color: #8ee58e;
+  grid-area: info;
+}
+
+.rollcall {
+  background-color: #016800;
+  grid-area: sidebar;
+  margin: -12px 0 -12px;
+}
+
+.rollcall h4 {
+  font-size: 24px;
+  font-weight: 1000;
+  text-align: center;
+  margin: 23px auto;
+  color: white;
+}
+
+
+
+.rollcall p {
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  margin: 5px auto 30px;
+  color: #8ee58e;
+}
+
+.rollcall a {
+  text-decoration: none;
+}
+
+.rollcall img:hover {
+  filter: brightness(110%);
+}
+.rollcall p:hover {
+  color: white;
+}
+
+.roll-card {
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.superman-roll-card {
+  position: relative;
+  right: 20px;
+  width: 150px;
+}
+
+.batman-roll-card {
+  position: relative;
+  right: 110px;
+  bottom: 20px;
+  width: 400px;
+}
+
+.wonder-woman-roll-card {
+  position: relative;
+  right: 155px;
+  width: 500px;
+}
+
+@media (min-width: 700px) {
+  .members {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "jla-1"
+      "jla-2"
+      "jla-3";
+  }
+}
+
+@media (max-width: 700px) {
+  .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "jla-1 jla-2 jla-3";
+  }
+
+  .roll-card {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+  }
+
+  .superman-roll-card {
+    position: relative;
+    right: 20px;
+    width: 120px;
+  }
+
+  .batman-roll-card {
+    position: relative;
+    right: 88px;
+    bottom: 16px;
+    width: 320px;
+  }
+
+  .wonder-woman-roll-card {
+    position: relative;
+    right: 124px;
+    width: 400px;
+  }
+  .rollcall p {
+    font-size: 12px;
+  }
+  .rollcall h4 {
+    font-size: 24px;
+    font-weight: 1000;
+    text-align: center;
+    margin: 23px auto 15px;
+    color: white;
+  }
+  #tribute-info {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto 188px;
+    grid-template-areas:
+      "info"
+      "sidebar";
+  }
+  #image {
+    height: 100%;
+    width: 600px;
+  }
+}
+
+#tribute-link {
+}
+
+hr {
+  width: 75%;
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: #016800;
+}
+
+h2 {
+  font-family: "Audiowide", cursive;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto auto;
+}
